@@ -83,6 +83,12 @@ cd fabric-chaincode-java
 ./gradlew clean build install
 ```
 
+for skip tests.
+
+```
+./gradlew clean build -x checkstyleMain -x checkstyleTest
+```
+
 > **Note:** `./gradlew clean build classes` can be used instead to reduce the binaries that are built. This should be sufficient for using the local repository.
 
 Build javaenv docker image, to have it locally.
@@ -90,6 +96,8 @@ Build javaenv docker image, to have it locally.
 ```
 ./gradlew buildImage
 ```
+
+
 
 ## Compatibility
 
